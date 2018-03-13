@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 13, 2018, 9:18:19 AM
+    Author     : bford18
+*/
+		
+/* These next few nav statements set the properties for the navigation bar at the top of the web page*/		
+
+div#profileData
+                {
+                   font-family: arial;
+                   position: center;
+                   align: center;
+                   display:inline;
+                }
+#buttonPlacment
+                {
+                    text-align: center; 
+                }
+nav ul 
+		{
+	
+			background-color: #090e13;
+		
+			list-style: none; 
+		
+			display: inline-block; 
+
+			width: 100%;               
+		}
+
+body, ul, li 
+		{
+		  margin: 0; 
+		  padding: 0; 
+		  border: 0;
+		}
+		
+nav ul li 
+		{
+		  display:inline-block;
+		  position: center;    
+		  background:none;    
+		 
+		}
+
+nav ul li a
+		{
+			display: block;
+			padding: 25px 40px;
+			color: white;
+			text-decoration: none;
+			font-family: arial;
+		}
+
+/*When hovering over the nav bar the user will see a different background color*/		
+nav ul li:hover a 
+		{   
+			color: white;
+			background-color: #ff4d4d;
+		}
+
+		
+nav ul
+		{
+			text-align: center;
+		}
+
+/*This displays to the user that they are currently on the home page. It displays a different background color compared to the other nav links*/
+.checked
+		{
+			background-color: lightgray;
+		}

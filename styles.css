@@ -1,0 +1,147 @@
+/*
+All of the id divs will have the same properties because they are within the same game image
+The thing that will change between each div is the image because each div will contain a different image
+Another thing that will change is the z-index because this determines where the image is placed, creating the layer of images
+*/
+
+div#crateLayer
+		{
+			position: absolute;
+			width:3000px;
+			height:540px;
+			margin:auto;
+			background-image: url("../Images/gameimages/cratelayer.png");
+			z-index: -2;
+		}
+
+div#backLayer
+		 {
+			position: absolute;
+			width:3000px;
+			height:540px;
+			margin:auto;
+			background-image: url("../Images/gameimages/backlayer.png");
+			z-index: -4;
+		}
+
+div#fogLayer 
+		{
+			 position: absolute;
+			 width:3000px;
+			 height:540px;
+			 margin:auto;
+			 background-image: url("../Images/gameimages/foglayer.png");
+			 z-index: 0;
+		 }
+
+div#skyLayer
+		{
+			position: absolute;
+			width:3000px;
+			height:540px;
+			margin:auto;
+			background-image: url("../Images/gameimages/skylayer.png");
+			z-index: -3;
+		}
+		
+div#character
+		{
+			position: relative;
+			width:300px;
+			height:300px;
+			top: 345px;
+			margin:auto;
+			z-index: -1;
+		}
+		
+/* styling of the top and bottom logos */
+div.Top
+		{
+			background-image:url("../Images/pageassets/logo.png");
+			width: 500px;
+			height: 300px;
+			margin: auto;	
+		}
+div.Bottom
+		{
+			background-image:url("../Images/pageassets/footer.png");
+			width: 300px;
+			height: 300px;
+			margin: auto;	
+			background-repeat: no-repeat;
+		}
+	
+/*This div helps space out the bottom logo */
+#gameWindow
+		{
+			width:400px;
+			height:300px;
+			margin: auto;
+		}
+
+/* This sets the background image of the web page to the tile image that is displayed */
+body
+		{
+			background-image: url("../Images/pageassets/tile.png");
+		}
+		
+/* These next few nav statements set the properties for the navigation bar at the top of the web page*/		
+nav ul 
+		{
+	
+			background-color: #090e13;
+		
+			list-style: none; 
+		
+			display: inline-block; 
+
+			width: 100%;               
+		}
+	
+nav ul ul 
+		{             
+		  display: none;       
+		}
+
+body, ul, li 
+		{
+		  margin: 0; 
+		  padding: 0; 
+		  border: 0;
+		}
+		
+nav ul li 
+		{
+		  display:inline-block;
+		  position: center;    
+		  background:none;    
+		 
+		}
+
+nav ul li a
+		{
+			display: block;
+			padding: 25px 40px;
+			color: white;
+			text-decoration: none;
+			font-family: papyrus;
+		}
+
+/*When hovering over the nav bar the user will see a different background color*/		
+nav ul li:hover a 
+		{   
+			color: white;
+			background-color: gray;
+		}
+
+		
+nav ul
+		{
+			text-align: center;
+		}
+
+/*This displays to the user that they are currently on the home page. It displays a different background color compared to the other nav links*/
+.checked
+		{
+			background-color: lightgray;
+		}
