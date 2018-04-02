@@ -7,42 +7,57 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>     
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login</title>
-        <link rel="stylesheet" href="styles.css" type="text/css"/>
+        
+        <%-- Link to css style sheet --%>
+        <link rel="stylesheet" href="./css/login.css" type="text/css"/>
+         <%-- Title of tab --%> <title>Login</title>
+        <%-- Set the background of the page to the image specified --%>
+        <style>
+            body 
+            {
+                background:url(duvall.jpg); 
+                background-size:cover;
+                margin:0;
+            }
+        </style>
     </head>
     
     <body>
-        <h1>Sign in</h1>
-        <table align="center">
-            <tbody>
-                <tr>
-                    <td>Email: </td>
-                    <td><input type="text" name="emailLogin" value="" size="50" /></td>
-                </tr>
-                <tr>
-                    <td>Password: </td>
-                    <td><input type="password" name="passwordLogin" value="" size="50" /></td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <div id="buttonPlacment">
-            <table> 
-                <tbody>
-                    <tr>
-                        <form name="registerForm" action="homePage.jsp" method="POST"> 
-                            <input type="submit" value="Login" name="loginButtonLogin" style="display: block; margin: 0 auto;" />
-                        </form>
-                    </tr>
-                    <tr>
-                    <form name="createAccountForm" action="RegisterPage.jsp" method="POST">
-                        <input type="submit" value="Create account" name="createAccountLogin" style="display: block; margin: 0 auto;" />
-                    </form> 
-                    </tr>
-                </tbody>
-            </table>
-         </div>       
+          <%-- Div is used to help with the style of the page --%>
+            <div>
+                <%-- Form that controls the users login and password information --%>
+                <form action="" method="post">
+                      <%-- Image of the Whitworth logo --%>
+                    <%--<img src="logo.jpg" alt ="Default login photo">--%>
+                    
+                    <h1> Login </h1>
+                    
+                     <%-- Username text field --%>
+                        <input type="text" name="userNameLogin" placeholder="User name">
+                        
+                    <%-- Add space between text fields --%>
+                    <br>
+                    
+                    <%-- Password text field --%>
+                        <input type="password" name="passWordLogin" placeholder="Password">   
+                        
+                     <%-- Add space between buttons --%>
+                    <br>
+                </form>
+                
+                  <%-- Form that controls the Login button --%>
+                 <form name="submitForm" action="homePage.jsp" method="POST"> 
+                     <%-- Login button --%>
+                    <input type="submit" name="loginButtonLogin" value="Login" class="Button">
+                 </form>
+          
+                  <%-- Form that controls the Register button--%>
+                 <form name="createAccountForm" action="RegisterPage.jsp" method="POST">
+                       <%-- Register button --%>
+                    <input type="submit" name="registerButtonLogin" value="Register" class="Button">
+                </form>
+            </div>
     </body>
 </html>

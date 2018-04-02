@@ -1,0 +1,82 @@
+/* 
+Style the division to have the different html elements apprear in a darker 
+square on the web page. This sets the background color and placement of the square
+on the screen, use the basic physical elements to change this
+*/
+.elementContainer
+{
+    width:500px;
+    height: 600px;
+    margin:auto;
+    margin-top:60px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    color:black;
+}
+
+/*
+Style the h1 elements in the web page to have a bigger font size,
+different background color and 
+the text color value of white
+*/
+h1
+{
+    text-align: center;
+    background: #b30000;
+    color: white;
+    border-radius: 10px;
+}
+
+/*
+Style the Input class html elements in the web page to 
+appear within the division in a clear and viewable manner
+Also make the font size bigger for visibility
+*/
+.Input
+{
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    width:300px;
+    height:50px;
+    font-size: 20px;
+    border:1px black solid;
+}
+
+/*
+Style the Button class html elements in the web page to
+appear within the division in a clear and viewable manner
+Also change the background and text colors to make for a better
+visual display, change border radius for  the 'arch' effect
+*/
+.Button
+{
+background:#b30000;
+color:white;
+border-radius:30px;
+border:none;
+height: 50px;
+width: 120px;
+text-align:center;
+font-size:20px;
+}
+
+/*
+Style the Button class html elements in the web page to
+have a hover effect that change their background and text colors
+*/
+.Button:hover
+{
+   background: #bfbfbf;
+   color: black;
+}
+/*
+Style the Select class html elements in the web page to
+appear in a viewable manner, basically make them bigger
+*/
+.Select
+{
+    width: 100px;
+    height:40px;
+    font-size: 15px;
+}

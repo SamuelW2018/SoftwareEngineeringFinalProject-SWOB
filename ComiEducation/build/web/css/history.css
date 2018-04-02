@@ -1,0 +1,82 @@
+              
+/* These next few nav statements set the properties for the navigation bar at the top of the web page
+They specify the text color, background color and displayment of the elements in the
+unordered list element(ul), the unordered list list item (ul, li) and the 
+value of the unordered list item (ul li a)*/	               
+nav ul 
+{	
+background-color: #090e13;
+list-style: none; 
+display: inline-block; 
+width: 100%;      
+text-align: center;
+font-size:20px;
+}
+
+body, ul, li 
+{
+margin: 0; 
+padding: 0; 
+border: 0;
+}
+		
+nav ul li 
+{
+display:inline-block;
+position: center;    
+background:none;    
+		 
+}
+
+nav ul li a
+{
+display: block;
+padding: 25px 40px;
+color: white;
+text-decoration: none;
+font-family: arial;
+}
+
+/*When hovering over the nav bar the user will see a different background color*/		
+nav ul li:hover a 
+{   
+color: white;
+background-color: #b30000;
+}
+
+
+/*This displays to the user that they are currently on the history page. It displays a different background color compared to the other nav list items*/
+.checked
+{
+background-color: lightgray;
+color: black;
+}
+
+/*
+Style the characteristics of the text field elements for the users data (i.e. date, time in, time out, etc.)
+*/
+input
+{
+margin: 0;
+padding: 0;  
+height: 40px;
+font-size: 20px;
+text-align: center;
+color:black;
+}
+
+/* 
+Style the division to have the different html elements apprear in a darker 
+square on the web page. This sets the background color and placement of the square
+on the screen, use the basic physical elements to change this
+*/
+div 
+{
+width:30%;
+height:210px;
+background:rgba(0,0,0,0.6);
+position:absolute;
+top:200px;
+left:35%;
+text-align: center;
+}

@@ -1,0 +1,131 @@
+
+/* These next few nav statements set the properties for the navigation bar at the top of the web page
+They specify the text color, background color and displayment of the elements in the
+unordered list element(ul), the unordered list list item (ul, li) and the 
+value of the unordered list item (ul li a)*/	               
+nav ul 
+{	
+background-color: #090e13;
+list-style: none; 
+display: inline-block; 
+width: 100%;      
+text-align: center;
+font-size:20px;
+}
+
+body, ul, li 
+{
+margin: 0; 
+padding: 0; 
+border: 0;
+}
+		
+nav ul li 
+{
+display:inline-block;
+position: center;    
+background:none;    
+		 
+}
+
+nav ul li a
+{
+display: block;
+padding: 25px 40px;
+color: white;
+text-decoration: none;
+font-family: arial;
+}
+
+/*When hovering over the nav bar the user will see a different background color*/		
+nav ul li:hover a 
+{   
+color: white;
+background-color: #b30000;
+}
+
+
+/*This displays to the user that they are currently on the track hours page. It displays a different background color compared to the other nav list items*/
+.checked
+{
+background-color: lightgray;
+color: black;
+}
+
+/*
+Style the characteristics of the text field elements for the users data (i.e. current location)
+*/
+input
+{
+margin: 0;
+padding: 0;  
+height: 40px;
+font-size: 20px;
+text-align: center;
+}
+
+/*
+Styles the button characteristics for this page. Set the button color, text color,
+button size and button shape
+*/
+.buttons
+{
+background:#b30000;
+color:white;
+border-radius:30px;
+border:none;
+height: 50px;
+width: 120px;
+text-align:center;
+font-size:20px;
+margin:10px auto;
+text-align:center;
+}
+
+/*
+The next three statements set the design characteristics for the specific
+button, the statements just change the color and the hovering text and button color
+for each button
+*/
+#green
+{
+    background-color: green;
+}
+#green:hover
+{
+    color: black;
+    background-color: lightgreen;
+}
+#red:hover
+{
+    color: black;
+    background-color: lightcoral;
+}
+
+/* 
+Style the division to have the different html elements apprear in a darker 
+square on the web page. This sets the background color and placement of the square
+on the screen, use the basic physical elements to change this
+*/
+div 
+{
+width:50%;
+height:400px;
+background:rgba(0,0,0,0.6);
+position:absolute;
+top:300px;
+left:400px;
+text-align: center;
+}
+
+/*
+Style the select option characteristics by changing its placement and text size
+*/
+select
+{
+margin: 0;
+padding: 0;  
+height: 40px;
+font-size: 20px;
+text-align: center;
+}
